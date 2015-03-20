@@ -1,0 +1,27 @@
+body {
+	padding-bottom: 200px;
+}
+
+#info-table td{
+	max-width: 300;
+}
+
+li.tab a {
+	padding: 23px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+div.toggle {
+	display: inline-block;
+}
+
+div.collapsed ul{
+	display: none;
+}
+
+a {
+	cursor: pointer;
+}
