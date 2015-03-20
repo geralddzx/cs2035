@@ -64,31 +64,34 @@
 	<p> 
 		CS2035 is a 2nd year introductionary course in using MatLab for data analysis and visualization. The everyday name for the course is Data Analysis and Visualization.
 	</p>
+	<hr>
 
-	<table class="table" id="info-table">
+	<table id="info-table">
 	<tr>
-		<td>
-			<h3>Professor</h3>
-				<b>
-					Prof. John Barron<br>
-					Dept. of Computer Science<br>
-				</b>
-				Middlesex College 379<br>
-				The University of Western Ontario<br>
-				London, Ontario, N6A 5B7<br>
-				<br>
-				Phone: (519) 661-2111 x86896<br>
-				Fax: (519) 661-3515<br>
-				<br>
-				<a href="mailto:barron@csd.uwo.ca"> barron@csd.uwo.ca</a><br>
-				<a href="http://www.csd.uwo.ca/faculty/barron/"> http://www.csd.uwo.ca/faculty/barron/</a> 
+		<td class="expand">
+			<a><h3>Professor Information</h3></a>
+				<ul>
+					<b>
+						Prof. John Barron<br>
+						Dept. of Computer Science<br>
+					</b>
+					Middlesex College 379<br>
+					The University of Western Ontario<br>
+					London, Ontario, N6A 5B7<br>
+					<br>
+					Phone: (519) 661-2111 x86896<br>
+					Fax: (519) 661-3515<br>
+					<br>
+					<a href="mailto:barron@csd.uwo.ca"> barron@csd.uwo.ca</a><br>
+					<a href="http://www.csd.uwo.ca/faculty/barron/"> http://www.csd.uwo.ca/faculty/barron/</a> 
+				</ul>
 		</td>
 	</tr>
 
 	<tr>
-		<td>
-			<div>
-				<h3>Class Information</h3>
+		<td class="expand">
+			<a><h3>Schedule and Location</h3></a>
+			<ul>
 				<b>Classes</b>
 				<ul>
 				  <li>Monday 3:30pm-5:30pm in NCB117</li>
@@ -104,15 +107,17 @@
 				<b>Office Hours:</b> Friday 10:00am-noon MC379<br>
 				<b>Midterm Exams:</b> Friday February 27th, in class<br>
 				<b>Final Exam:</b>TBA<br>
-			</div>
+			</ul>
 		</td>
 	</tr>
 
 	<tr>
-		<td>
-			<h3>Teaching Assistant</h3>
-			<b>Teaching Assistant: </b><a href="mailto:achaud29@csd.uwo.ca">Ayan Chaudhury</a><br>
-			<b>Office Hours: </b>12.30pm-1.30pm, Tuesdays and Wednesdays in MC4A.
+		<td class="expand">
+			<a><h3>Teaching Assistant</h3></a>
+			<ul>
+				<b>Teaching Assistant: </b><a href="mailto:achaud29@csd.uwo.ca">Ayan Chaudhury</a><br>
+				<b>Office Hours: </b>12.30pm-1.30pm, Tuesdays and Wednesdays in MC4A.
+			</ul>
 		</td>
 	</tr>
 	</table>
@@ -132,7 +137,7 @@
 	<div class="toggle"><a href="http://www.csd.uwo.ca/Courses/CS2035b/lab05.pdf">Lab 5 (AVAILABLE, Lab 5, Friday, Febrary 13th)</a></div><br> 
   <div class="toggle"><a href="http://www.csd.uwo.ca/Courses/CS2035b/lab06.pdf">Lab 6 (AVAILABLE, Lab 6, Friday, Febrary 27th)</a></div><br> 
 	<div class="toggle">
-		<a href="http://www.csd.uwo.ca/Courses/CS2035b/lab07.pdf">Lab 7 (AVAILABLE, Lab 7, Friday, March 6th)</a>
+		<a href="http://www.csd.uwo.ca/Courses/CS2035b/lab07.pdf">Lab 7 (AVAILABLE, Lab 7, Friday, March 6th)</a><br>
 		<ul class="toggle"> 
 			<li><a href="http://www.csd.uwo.ca/Courses/CS2035b/L08plot3U.m">L08plot3U.m (AVAILABLE)</a> </li>
 			<li><a href="http://www.csd.uwo.ca/Courses/CS2035b/grs2rgb.m">grs2rgb.m (AVAILABLE)</a> </li>
@@ -260,8 +265,8 @@
    
   <!-- Handle Assignment Expand -->
   <script>
-  	$('div.expand').addClass("collapsed")
-  	$('div.expand a').click(function(){
+  	$('.expand').addClass("collapsed")
+  	$('.expand a').click(function(){
   		var target = $(event.currentTarget).parent()
   		if(target.hasClass("collapsed")){
   			target.removeClass("collapsed")

@@ -3,7 +3,7 @@ body {
 }
 
 #info-table td{
-	max-width: 300;
+	max-width: 500;
 }
 
 li.tab a {
@@ -14,11 +14,11 @@ ul {
 	list-style-type: none;
 }
 
-div.toggle {
+.toggle {
 	display: inline-block;
 }
 
-div.collapsed ul{
+.collapsed ul{
 	display: none;
 }
 
