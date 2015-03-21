@@ -43,7 +43,7 @@
 			$(".tab").removeClass("active")
 			$(target).addClass("active")
 			var topPos = $($(target).find("a").attr("href")).offset().top
-			$('html, body').animate({scrollTop : topPos}, 500);
+			$('html, body').animate({scrollTop : topPos - $(".navbar-default").height() - 10}, 500);
 			event.preventDefault()
 		}
 
@@ -53,19 +53,18 @@
 	</script>
 
 	<br>
-  <br>
+ 	<br>
 	<br>
 	<br>
   <br>
 	<br>
 
 	<!-- Course Information -->
-	<div id="course-information"></div>
 	<br>
   <br>
 	<br>
 
-	<h2>Course Information</h2>
+	<h2 id="course-information">Course Information</h2>
 	<p> 
 		CS2035 is a 2nd year introductionary course in using MatLab for data analysis and visualization. The everyday name for the course is Data Analysis and Visualization.
 	</p>
@@ -128,12 +127,11 @@
 	</table>
 
 	<!-- Labs -->
-	<div id="labs"></div>
 	<br>
   <br>
 	<br>
 
-	<h2>Labs</h2>
+	<h2 id="labs">Labs</h2>
 	<hr>
 	<!-- lab 1(no expand) -->
 	<div class="expand">
@@ -211,12 +209,11 @@
 
 
   <!-- Assignments -->
-  <div id="assignments"></div>
   <br>
 	<br>
 	<br>
 
-	<h2>Assignments</h2>
+	<h2 id="assignments">Assignments</h2>
 	<hr>
 	<div class="expand">
 		<a><h4>Assignment 1</h4></a>
@@ -251,7 +248,7 @@
 	</div>
 	
 	<div class="expand">
-		<a><h4>Assignment 3</h4></a>
+		<a><h4>Assignment 4</h4></a>
 		<ul>
 			<li><a href="http://www.csd.uwo.ca/Courses/CS2035b/ass4_2014.pdf">Assignment 4 [2014] (AVAILABLE)</a></li>
 			<li><a href="http://www.csd.uwo.ca/Courses/CS2035b/ass4_2015.pdf">Assignment 4 [2015] (AVAILABLE)</a></li>
@@ -261,12 +258,12 @@
   </div>
 
 	<!--   Midterm/Final -->
-	<div id="midterm-final"></div>
+	
   <br>
 	<br>
 	<br>
 
-  <h2> Midterm/Final Exams</h2>
+  <h2 id="midterm-final"> Midterm/Final Exams</h2>
   <div class="expand">
 		<a><h4>Midterms</h4></a>
 		<ul>
