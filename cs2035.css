@@ -1,5 +1,6 @@
 body {
 	padding-bottom: 200px;
+	min-width: 500px;
 }
 
 #info-table td{
@@ -7,7 +8,7 @@ body {
 }
 
 li.tab a {
-	padding: 23px;
+	padding: 15px;
 }
 
 ul {
@@ -24,4 +25,11 @@ ul {
 
 a {
 	cursor: pointer;
+}
+
+.navbar-header {
+	img {
+		width: 300px;
+		padding: 0;
+	}
 }
